@@ -31,7 +31,8 @@ class ChineseZodiac {
   }
 
   // Take input of year of birth
-  std::string get_year_input(std::string year) {
+  std::string get_year_input() {
+    std::string year;
     std::cout << "Welcome to Find Your Chinese Zodiac - The Twelve Animal "
               << "Guardians\n" << std::endl;
     std::cout << "Please enter your year of birth (YYYY): ";
@@ -128,15 +129,14 @@ class ChineseZodiac {
     }
 
     if (n == (tptr->tm_year + 1900)) {
-      std::cout << "This year is your guardian year!\n";
-      std::cout << "The year of " << n + 12 
-                << " will be your next guardian year." << std::endl;
+      std::cout << "Hey, this is the zodiac year of your animal guardian!\n";
+      std::cout << "Next time will be year of " << n + 12 << "." << std::endl;
     } else {
-      std::cout << "The year of " << n << " will be your next guardian year."
-                << std::endl;
+      std::cout << "The next zodiac year of your animal guardian will be " << n
+                << ". " << std::endl;
     }
-    std::cout << "Remember wearing a red will bring you good luck!" 
-              << std::endl;
+    std::cout << "Remember, wearing a red in your zodiac year will bring you "
+              << "good luck!" << std::endl;
   }
 };
 
@@ -147,7 +147,7 @@ int main() {
   
   // Take input and validate
   do {
-    year_input = zodiac_user.get_year_input(year_input);
+    year_input = zodiac_user.get_year_input();
   } while (!zodiac_user.validate_year_of_birth(year_input));
 
   // Output animal guardian result
