@@ -183,10 +183,7 @@ int main() {
 
   while (true) {
     // Take and validate input
-    // do {
-    std::string year_input;
     year_input = user.get_year_input(year_input);
-    // } while (!user.validate_year_of_birth(year_input));
 
     // Output animal guardian result
     user.animal_guardian(year_input, user.get_zodiac_list());
@@ -197,6 +194,7 @@ int main() {
     // Check if the user would like to test again
     repeat_input = repeat();
 
+    // Output game end message
     if (repeat_input == 'y' || repeat_input == '1') {
       continue;
     } else if (repeat_input == 'n' || repeat_input == '2') {
@@ -204,6 +202,5 @@ int main() {
       break;
     }
   }
-  
   return 0;
 }
