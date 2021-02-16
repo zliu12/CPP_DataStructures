@@ -40,7 +40,7 @@ class ChineseZodiac {
     std::cout << "\nWelcome to Find Your Chinese Zodiac - The Twelve Animal "
                 << "Guardians\n" << std::endl;
     do {
-      std::cout << "Please enter your year of birth (YYYY): ";
+      std::cout << "Please enter your year of birth (YYYY), then press enter: ";
       std::getline(std::cin, s);
       std::cout << std::endl;
     }while (!validate_year_of_birth(s));
@@ -51,6 +51,7 @@ class ChineseZodiac {
   bool checkDigit(const std::string &s) const {
     for (unsigned i = 0; i < s.size(); i++) {
       if (!isdigit(s[i])) {
+        std::cout << "You entered: " << s << std::endl;
         std::cout << "Invalid input: Non-numerical character exists.\n"
                   << std::endl;
         return false;
@@ -62,6 +63,7 @@ class ChineseZodiac {
   // Check input length to avoid crazy long input like 1111111111
   bool checkLength(const std::string &s) const {
     if (s.size() != INPUT_LENGTH) {
+      std::cout << "You entered: " << s << std::endl;
       std::cout << "Invalid input: Wrong number of characters.\n" << std::endl;
       return false;
     }
@@ -71,10 +73,12 @@ class ChineseZodiac {
   // Check if input is within the time frame
   bool checkTime(const std::string &s) const {
     if (0 <= std::stoi(s) && std::stoi(s) < YEAR_LOWER_BOUND) {
+      std::cout << "You entered: " << s << std::endl;
       std::cout << "Invalid input: Out of time frame. The Man From Earth?\n"
                 << std::endl;
       return false;
     } else if (std::stoi(s) > YEAR_UPPER_BOUND) {
+      std::cout << "You entered: " << s << std::endl;
       std::cout << "Invalid input: Out of time frame. Back To The Future!\n"
                 << std::endl;
       return false;
@@ -94,6 +98,7 @@ class ChineseZodiac {
   void animal_guardian(const std::string &s, const str_vec &v) const {
     int n = std::stoi(s);
     int result = n % v.size();
+    std::cout << "You entered: " << s << std::endl;
     switch (result) {
       case 0:
         std::cout << "Your animal guardian is: "  << v[result] << std::endl;
@@ -144,10 +149,11 @@ class ChineseZodiac {
     }
 
     if (n == (tptr->tm_year + 1900)) {
-      std::cout << "Hey, this is the zodiac year of your animal guardian!\n";
-      std::cout << "Next time will be year of " << n + 12 << "." << std::endl;
+      std::cout << "Hey, it is the year of Ox now!\n";
+      std::cout << "The next time will be year of " << n + 12 << "." 
+                << std::endl;
     } else {
-      std::cout << "The next zodiac year of your animal guardian will be " << n
+      std::cout << "The next year of your animal guardian will be " << n
                 << ". " << std::endl;
     }
     std::cout << "Remember, wearing a red in your zodiac year will bring you "
@@ -160,12 +166,12 @@ char repeat() {
   do {
     std::cout << "1. Press [Y/y] to test a different year.\n" 
               << "2. Press [N/n] to quit." << std::endl
-              << "Would you like to continue: ";
+              << "Please enter your choice, then press enter: ";
     std::cin >> a;
     std::cin.ignore();
     std::cout << std::endl;
     a = tolower(a);
-  } while (a != 'n' && a != 'y');
+  } while (a != 'n' && a != 'y' && a != '1' && a != '2');
   return a;
 }
 
@@ -176,7 +182,7 @@ int main() {
   char repeat_input;
 
   while (true) {
-    // Take input and validate
+    // Take and validate input
     // do {
     std::string year_input;
     year_input = user.get_year_input(year_input);
@@ -188,13 +194,13 @@ int main() {
     // Output the next animal guardian year
     user.next_guardian_year(year_input);
 
+    // Check if the user would like to test again
     repeat_input = repeat();
 
-    if (repeat_input == 'y') {
-
+    if (repeat_input == 'y' || repeat_input == '1') {
       continue;
-    } else if (repeat_input == 'n') {
-      std::cout << "Bye bye.\n" << std::endl;
+    } else if (repeat_input == 'n' || repeat_input == '2') {
+      std::cout << "\nBye bye.\n" << std::endl;
       break;
     }
   }
