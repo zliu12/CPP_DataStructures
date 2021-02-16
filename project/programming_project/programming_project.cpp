@@ -70,11 +70,11 @@ class ChineseZodiac {
 
   // Check if input is within the time frame
   bool checkTime(const std::string &s) const {
-    if (0 <= std::atoi(s.c_str()) && std::atoi(s.c_str()) < YEAR_LOWER_BOUND) {
+    if (0 <= std::stoi(s) && std::stoi(s) < YEAR_LOWER_BOUND) {
       std::cout << "Invalid input: Out of time frame. The Man From Earth?\n"
                 << std::endl;
       return false;
-    } else if (std::atoi(s.c_str()) > YEAR_UPPER_BOUND) {
+    } else if (std::stoi(s) > YEAR_UPPER_BOUND) {
       std::cout << "Invalid input: Out of time frame. Back To The Future!\n"
                 << std::endl;
       return false;
@@ -92,7 +92,7 @@ class ChineseZodiac {
 
   // Find your animal guardian
   void animal_guardian(const std::string &s, const str_vec &v) const {
-    int n = std::atoi(s.c_str());
+    int n = std::stoi(s);
     int result = n % v.size();
     switch (result) {
       case 0:
@@ -136,7 +136,7 @@ class ChineseZodiac {
 
   // find the next guardian year
   void next_guardian_year (const std::string &s) const {
-    int n = atoi(s.c_str());
+    int n = std::stoi(s);
     time_t t = time(NULL);
     tm *tptr = localtime(&t);
     while (n < tptr->tm_year + 1900) {
