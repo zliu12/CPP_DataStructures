@@ -49,12 +49,21 @@ class ChineseZodiac {
 
   // Check if input characters are digits
   bool checkDigit(const std::string &s) const {
-    for (unsigned i = 0; i < s.size(); ++i) {
+    for (unsigned i = 0; i < s.size(); i++) {
       if (!isdigit(s[i])) {
         std::cout << "Invalid input: Non-numerical character exists.\n"
                   << std::endl;
         return false;
       }
+    }
+    return true;
+  }
+
+  // Check input length to avoid crazy long input like 1111111111
+  bool checkLength(const std::string &s) const {
+    if (s.size() != INPUT_LENGTH) {
+      std::cout << "Invalid input: Wrong number of characters.\n" << std::endl;
+      return false;
     }
     return true;
   }
@@ -75,7 +84,7 @@ class ChineseZodiac {
 
   // Validate input
   bool validate_year_of_birth(const std::string &s) const {
-    if (checkDigit(s) && checkTime(s)) {
+    if (checkDigit(s) && checkLength(s) && checkTime(s)) {
       return true;
     }
     return false;
@@ -83,7 +92,7 @@ class ChineseZodiac {
 
   // Find your animal guardian
   void animal_guardian(const std::string &s, const str_vec &v) const {
-    int n = std::stoi(s);
+    int n = std::atoi(s.c_str());
     int result = n % v.size();
     switch (result) {
       case 0:
@@ -127,7 +136,7 @@ class ChineseZodiac {
 
   // find the next guardian year
   void next_guardian_year (const std::string &s) const {
-    int n = stoi(s);
+    int n = atoi(s.c_str());
     time_t t = time(NULL);
     tm *tptr = localtime(&t);
     while (n < tptr->tm_year + 1900) {
@@ -153,6 +162,7 @@ char repeat() {
               << "2. Press [N/n] to quit." << std::endl
               << "Would you like to continue: ";
     std::cin >> a;
+    std::cin.ignore();
     std::cout << std::endl;
     a = tolower(a);
   } while (a != 'n' && a != 'y');
