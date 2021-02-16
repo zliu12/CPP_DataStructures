@@ -4,7 +4,12 @@
  * Copyright (c) [2021], Zhao Liu.
  */
 
-/* Find Your Chinese Zodiac - The Twelve Animal Guardians */
+/* Find Your Chinese Zodiac - The Twelve Animal Guardians 
+Description:
+  The program reads in the user's year of birth and output the animal guardian
+of Chinese Zodiac of that year, then calculates and prints out the next
+Zodiac year of this guardian.
+*/
 
 #include <iostream>
 #include <string>
@@ -31,14 +36,15 @@ class ChineseZodiac {
   }
 
   // Take input of year of birth
-  std::string get_year_input() {
-    std::string year;
-    std::cout << "Welcome to Find Your Chinese Zodiac - The Twelve Animal "
-              << "Guardians\n" << std::endl;
-    std::cout << "Please enter your year of birth (YYYY): ";
-    std::getline(std::cin, year);
-    std::cout << std::endl;
-    return year;
+  std::string get_year_input(std::string s) {
+    std::cout << "\nWelcome to Find Your Chinese Zodiac - The Twelve Animal "
+                << "Guardians\n" << std::endl;
+    do {
+      std::cout << "Please enter your year of birth (YYYY): ";
+      std::getline(std::cin, s);
+      std::cout << std::endl;
+    }while (!validate_year_of_birth(s));
+    return s;
   }
 
   // Check if input characters are digits
@@ -55,11 +61,11 @@ class ChineseZodiac {
 
   // Check if input is within the time frame
   bool checkTime(const std::string &s) const {
-    if (0 <= std::stoi(s) && std::stoi(s) < YEAR_LOWER_BOUND) {
+    if (0 <= std::atoi(s.c_str()) && std::atoi(s.c_str()) < YEAR_LOWER_BOUND) {
       std::cout << "Invalid input: Out of time frame. The Man From Earth?\n"
                 << std::endl;
       return false;
-    } else if (std::stoi(s) > YEAR_UPPER_BOUND) {
+    } else if (std::atoi(s.c_str()) > YEAR_UPPER_BOUND) {
       std::cout << "Invalid input: Out of time frame. Back To The Future!\n"
                 << std::endl;
       return false;
@@ -136,25 +142,52 @@ class ChineseZodiac {
                 << ". " << std::endl;
     }
     std::cout << "Remember, wearing a red in your zodiac year will bring you "
-              << "good luck!" << std::endl;
+              << "good luck!\n" << std::endl;
   }
 };
 
+char repeat() {
+  char a;
+  do {
+    std::cout << "1. Press [Y/y] to test a different year.\n" 
+              << "2. Press [N/n] to quit." << std::endl
+              << "Would you like to continue: ";
+    std::cin >> a;
+    std::cout << std::endl;
+    a = tolower(a);
+  } while (a != 'n' && a != 'y');
+  return a;
+}
+
 int main() {
   // Create an object
-  ChineseZodiac zodiac_user; 
+  ChineseZodiac user; 
   std::string year_input;
+  char repeat_input;
+
+  while (true) {
+    // Take input and validate
+    // do {
+    std::string year_input;
+    year_input = user.get_year_input(year_input);
+    // } while (!user.validate_year_of_birth(year_input));
+
+    // Output animal guardian result
+    user.animal_guardian(year_input, user.get_zodiac_list());
+
+    // Output the next animal guardian year
+    user.next_guardian_year(year_input);
+
+    repeat_input = repeat();
+
+    if (repeat_input == 'y') {
+
+      continue;
+    } else if (repeat_input == 'n') {
+      std::cout << "Bye bye.\n" << std::endl;
+      break;
+    }
+  }
   
-  // Take input and validate
-  do {
-    year_input = zodiac_user.get_year_input();
-  } while (!zodiac_user.validate_year_of_birth(year_input));
-
-  // Output animal guardian result
-  zodiac_user.animal_guardian(year_input, zodiac_user.get_zodiac_list());
-
-  // Output the next animal guardian year
-  zodiac_user.next_guardian_year(year_input);
-
   return 0;
 }
