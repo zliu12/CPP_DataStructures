@@ -17,6 +17,7 @@ Zodiac year of this guardian.
 #include <cctype>
 #include <ctime>
 
+// Define the string type vector
 typedef std::vector<std::string> str_vec;
 
 const int YEAR_LOWER_BOUND = 1900;
@@ -35,7 +36,9 @@ class ChineseZodiac {
     return _zodiac_list;
   }
 
-  // Take input of year of birth
+  // This funcion takes a default string and reads in the user input into that
+  // string, and then outputs the string as long as the input is valid
+  // @param: an empty string
   std::string get_year_input(std::string s) {
     std::cout << "\nWelcome to Find Your Chinese Zodiac - The Twelve Animal "
                 << "Guardians\n" << std::endl;
@@ -47,7 +50,9 @@ class ChineseZodiac {
     return s;
   }
 
-  // Check if input characters are digits
+  // This function checks whether the string contain any non-digit characters,
+  // and returns false if it does, otherwise returns true
+  // @param
   bool checkDigit(const std::string &s) const {
     for (unsigned i = 0; i < s.size(); i++) {
       if (!isdigit(s[i])) {
