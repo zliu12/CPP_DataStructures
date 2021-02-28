@@ -42,11 +42,10 @@ class IfPalindrome {
   Return: true if the input string is a palindrome, false otherwise
    */
   bool check_palindrome(string &s) const {
-
     /* Using iterator */
   //   string::iterator it_begin = s.begin();
   //   string::iterator it_end = s.end() - 1;
-  //   while (*it_begin != *it_end && *it_begin != *(it_begin + 1)) {
+  //   while (it_begin != it_end && it_begin < it_end) {
   //     if (it_begin != it_end) {
   //       return false;
   //     } else {
@@ -63,10 +62,14 @@ class IfPalindrome {
     unsigned s_size = s.size();
     const char *begin = &s[0];
     const char *end = &s[s_size - 1];
-    while (begin != end && begin != (end + 1)) {
+    // The loop goes as long as the pointed to address of begin and end are not
+    // equal, and the address pointed to by begin is "before" the address 
+    // pointed to by end
+    while (begin != end && begin < end) {
       if (*begin != *end) {
         return false;
       } else {
+        cout << *begin << *end << endl;
         begin++;
         end--;
       }
