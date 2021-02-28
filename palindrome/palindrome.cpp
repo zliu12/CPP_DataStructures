@@ -41,7 +41,25 @@ class IfPalindrome {
   Param: a string variable stores the input string from users
   Return: true if the input string is a palindrome, false otherwise
    */
-  bool check_palindrome(const string &s) {
+  bool check_palindrome(string &s) const {
+
+    /* Using iterator */
+  //   string::iterator it_begin = s.begin();
+  //   string::iterator it_end = s.end() - 1;
+  //   while (*it_begin != *it_end && *it_begin != *(it_begin + 1)) {
+  //     if (it_begin != it_end) {
+  //       return false;
+  //     } else {
+  //       it_begin++;
+  //       it_end--;
+  //     }
+  //   }
+  //   return true;
+  // }
+
+    // Using pointer
+    // when the beginning character is not equal to the ending character and 
+    // they are not adjcent
     unsigned s_size = s.size();
     const char *begin = &s[0];
     const char *end = &s[s_size - 1];
