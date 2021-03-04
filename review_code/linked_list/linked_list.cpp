@@ -53,80 +53,8 @@ can traverse forward/backward), circular(make the end ptr to the beginning)¡
 4. delete search;
  */
 
+#include "linked_list.h"
 #include <iostream>
-
-struct Node {
-  int data;
-  Node *next = nullptr;
-};
-
-class LinkedList {
- private:
-  Node *_head;
-  Node *_tail;
-  void insertFirst(int item);
-  Node *createNode(int item);   // Create a new node
-  Node *find(int item);   // Find the node with the number item in it
-  /* Overload the remove function so that we can remove that particular node
-  that we find, so it has node as the parameter */
-  void remove(Node *node);
-  Node *previousNode(Node *node);
-
- public:
-  void insertHead(int item);
-  void insertTail(int item);
-  /* Call find to find the node with the value in it, then pass that node to the
-  remove(Node *node) function and the remove function will do the removing 
-  process */
-  void remove(int item);
-  friend std::ostream &operator<<(std::ostream &out, const LinkedList &list);
-};
-
-void LinkedList::insertFirst(int item) {
-  Node *n = new Node;
-  n->data = item;
-  _tail = n;
-  _head = n;
-}
-
-void LinkedList::insertHead(int item) {
-  if (_head == nullptr) {
-    insertFirst(item);
-  } else {
-    Node *n = new Node;
-    n->data = item;
-    n->next = _head;
-    _head = n;
-  }
-}
-
-void LinkedList::insertTail(int item) {
-  // If the header ptr points to null, it means nothing is in the list, so we
-  // just simply insert the item and make the item the one and only element in
-  // the list
-  if (_head == nullptr) {
-    insertFirst(item);
-  } else {
-    // Create a new node
-    Node *n = createNode(item);
-    // Tail still pting to the last node of the list rn, so tail->next denotes
-    // the ptr var of the last node, by making it point to n, we're pting the 
-    // last node to n, so the original last node becomes the second node to last
-    // and n now becomes the last node
-    _tail->next = n;
-    // Pting tail to n since n's been the last node
-    _tail = n;
-  }
-}
-
-std::ostream &operator<<(std::ostream &out, const LinkedList &list) {
-  Node *walker = list._head;
-  while (walker != nullptr) {
-    out << walker->data;
-    walker = walker->next;
-  }
-  return out;
-}
 
 Node* LinkedList::createNode(int item) {
   Node *n = new Node;
@@ -156,6 +84,23 @@ Node* LinkedList::find(int item) {
     walker = walker->next;
   }
   return walker;
+}
+
+Node* LinkedList::previousNode(Node *node) {
+  Node *walker = _head;
+  // when walker not pts to the nullptr(_tail->next) && walker not pts to the
+  // target node (which walker pts to the node prior to the target node)
+  while (walker != nullptr && walker->next != node) {
+    walker = walker->next;
+  }
+  return walker;
+}
+
+void LinkedList::insertFirst(int item) {
+  Node *n = new Node;
+  n->data = item;
+  _tail = n;
+  _head = n;
 }
 
 // Function remove is overloaded
@@ -196,18 +141,57 @@ void LinkedList::remove(Node *node_remove) {
   }
 }
 
+void LinkedList::insertHead(int item) {
+  if (_head == nullptr) {
+    insertFirst(item);
+  } else {
+    Node *n = createNode(item);
+    n->next = _head;
+    _head = n;
+  }
+}
+
+void LinkedList::insertTail(int item) {
+  // If the header ptr points to null, it means nothing is in the list, so we
+  // just simply insert the item and make the item the one and only element in
+  // the list
+  if (_head == nullptr) {
+    insertFirst(item);
+  } else {
+    // Create a new node
+    Node *n = createNode(item);
+    // Tail still pting to the last node of the list rn, so tail->next denotes
+    // the ptr var of the last node, by making it point to n, we're pting the 
+    // last node to n, so the original last node becomes the second node to last
+    // and n now becomes the last node
+    _tail->next = n;
+    // Pting tail to n since n's been the last node
+    _tail = n;
+  }
+}
+
 void LinkedList::remove(int item) {
   remove(find(item));
 }
 
-Node* LinkedList::previousNode(Node *node) {
-  Node *walker = _head;
-  // when walker not pts to the nullptr(_tail->next) && walker not pts to the
-  // target node (which walker pts to the node prior to the target node)
-  while (walker != nullptr && walker->next != node) {
+void LinkedList::removeHead() {
+  remove(_head);
+}
+
+int LinkedList::getHead() {
+  if (_head != nullptr) {
+    return _head->data;
+  }
+  return 0;
+}
+
+std::ostream &operator<<(std::ostream &out, const LinkedList &list) {
+  Node *walker = list._head;
+  while (walker != nullptr) {
+    out << walker->data;
     walker = walker->next;
   }
-  return walker;
+  return out;
 }
 
 int main() {
