@@ -12,13 +12,12 @@ class DivideByZeroExcpetion : public std::exception {
   DivideByZeroExcpetion();
   DivideByZeroExcpetion(char* message);
   // noexcept means we promise we not gonna throw exception
-  virtual const char* what() const noexcept;
-
+  virtual const char* what() const _NOEXCEPT;
 };
 
 class NegativeNumberExcpetion : public std::exception {
  public:
-  virtual const char* what() const noexcept;
+  virtual const char* what() const _NOEXCEPT;
 };
 
 class Math {

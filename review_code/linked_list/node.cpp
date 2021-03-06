@@ -7,7 +7,8 @@
 #ifndef NODE_H_
 #define NODE_H_
 
-struct Node {
+class Node {
+ public:
   int data;
   Node *next = nullptr;
 };

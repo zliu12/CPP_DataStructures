@@ -194,27 +194,27 @@ std::ostream &operator<<(std::ostream &out, const LinkedList &list) {
   return out;
 }
 
-int main() {
-  LinkedList l;
-  LinkedList l2;
-  for (int i = 0; i < 10; i++) {
-    l.insertTail(i);
-  }
-  std::cout << "l insert head: ";
-  std::cout << l << std::endl;
-  
-  for (int i = 0; i < 10; i++) {
-    l2.insertHead(i);
-  }
-  std::cout << "l2 insert tail: ";
-  std::cout << l2 << std::endl;
-
-  l2.remove(0);
-  std::cout << "remove l2 - 0: " << l2 << std::endl;
-  l2.remove(5);
-  std::cout << "remove l2 - 5: " << l2 << std::endl;
-  l2.remove(9);
-  std::cout << "remove l2 - 9: " << l2 << std::endl;
-
-  return 0;
-}
+// int main() {
+  // LinkedList l;
+  // LinkedList l2;
+  // for (int i = 0; i < 10; i++) {
+    // l.insertTail(i);
+  // }
+  // std::cout << "l insert head: ";
+  // std::cout << l << std::endl;
+  // 
+  // for (int i = 0; i < 10; i++) {
+    // l2.insertHead(i);
+  // }
+  // std::cout << "l2 insert tail: ";
+  // std::cout << l2 << std::endl;
+// 
+  // l2.remove(0);
+  // std::cout << "remove l2 - 0: " << l2 << std::endl;
+  // l2.remove(5);
+  // std::cout << "remove l2 - 5: " << l2 << std::endl;
+  // l2.remove(9);
+  // std::cout << "remove l2 - 9: " << l2 << std::endl;
+// 
+  // return 0;
+// }
