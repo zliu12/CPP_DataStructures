@@ -165,7 +165,7 @@ LinkedList::~LinkedList() {
   }
   std::cout << "~LinkedList() ends" << std::endl;
 }
-LinkedList::LinkedList(const LinkedList &list) {
+LinkedList::LinkedList(const LinkedList &list) : LinkedList() {
   /* Call the assignment operator and perform its algorithm 
   same with: (*this).operator = (list), calling the member func of the obj and
   and passing list as a variable
@@ -173,7 +173,7 @@ LinkedList::LinkedList(const LinkedList &list) {
   std::cout << "Copy constructor starts" << std::endl;
   // Here I tell the compiler: make me a new obj by copying from list
   *this = list;   // (*this).operator=(list);
-  std::cout << "Copy cconstructor ends" << std::endl;
+  std::cout << "Copy constructor ends" << std::endl;
 }
 LinkedList& LinkedList::operator=(const LinkedList &list) {
   std::cout << "Assignment operator starts" << std::endl;;

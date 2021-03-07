@@ -10,14 +10,14 @@ int main() {
   proofOfDestructor(l2);
   std::cout << std::endl;
 
-  std::cout << "In main, l2 insertTail starts" << std::endl;
+  std::cout << "In main, l2 insertTail starts:" << l2 << std::endl;
   for (int i = 0; i < 10; i++) {
     l2.insertTail(i);
   }
   std::cout << "In main, l2 insertTail ends: " << l2 << std::endl << std::endl;
 
-  std::cout << "Create l3 from l2" << std::endl;
-  LinkedList l3 = l2;
+  std::cout << "Create l3 from l2 by l3(l2)" << std::endl;
+  LinkedList l3(l2);
   std::cout << "l3(l2): " << l3 << std::endl << std::endl;
 
   // LinkedList l1;
