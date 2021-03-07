@@ -9,7 +9,7 @@ main.o: main.cpp linked_list.h
 linked_list.o: linked_list.cpp linked_list.h
 	clang++ -std=c++14 -c $<
 
-node.o: node.cpp
+node.o: node.cpp node.h
 	clang++ -std=c++14 -c $<
 
 clean:

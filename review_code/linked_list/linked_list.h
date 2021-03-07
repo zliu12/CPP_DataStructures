@@ -6,7 +6,7 @@
 
 #ifndef LINKED_LIST_H_
 #define LINKED_LIST_H_
-#include "node.cpp"
+#include "node.h"
 #include <iostream>
 
 class LinkedList {
