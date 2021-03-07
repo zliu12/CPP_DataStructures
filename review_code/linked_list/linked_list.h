@@ -18,16 +18,22 @@ class LinkedList {
 
   // Find the node with the number item in it
   Node *find(int item);
-  Node *previousNode(Node *node);
+  Node *previousNode(Node *node_target);
 
   // Only call this when find head and tail are NULL
   void insertFirst(int item);
 
   /* Overload the remove function so that we can remove that particular node
   that we find, so it has node as the parameter */
-  void remove(Node *node);
+  void remove(Node *node_target);
 
  public:
+  // Default constructor
+  LinkedList();
+  // A destructor has the same name as the class, with a tilde in the front
+  ~LinkedList();                                  // Big3: Destructor                              
+  LinkedList(const LinkedList &list);             // Big3: Copy constructor
+  LinkedList &operator=(const LinkedList &list);  // Big3: Assignment operator
   void insertHead(int item);
   void insertTail(int item);
 

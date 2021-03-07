@@ -56,7 +56,11 @@ can traverse forward/backward), circular(make the end ptr to the beginning)¡
 #include "linked_list.h"
 #include <iostream>
 
+
 Node* LinkedList::createNode(int item) {
+  // A new node is created somewhere on the memory, when get out the function
+  // scope, the ptr (local var n) gets deleted, but the memory allcoated for
+  // the new node gets remained on the memory although the ptr is deleted
   Node *n = new Node;
   n->data = item;
   n->next = nullptr;
@@ -80,17 +84,19 @@ Node* LinkedList::find(int item) {
   // return nullptr;
 
   // Approach 2
-  while (walker->data != item && walker != _tail->next) {
+  // Must check walker != _tail->next first bcuz it would be nonsense to check
+  // if walker->dat != item when walker == nullptr, otherwise the program crash
+  while (walker != _tail->next && walker->data != item) {
     walker = walker->next;
   }
   return walker;
 }
 
-Node* LinkedList::previousNode(Node *node) {
+Node* LinkedList::previousNode(Node *node_target) {
   Node *walker = _head;
   // when walker not pts to the nullptr(_tail->next) && walker not pts to the
   // target node (which walker pts to the node prior to the target node)
-  while (walker != nullptr && walker->next != node) {
+  while (walker != nullptr && walker->next != node_target) {
     walker = walker->next;
   }
   return walker;
@@ -105,40 +111,94 @@ void LinkedList::insertFirst(int item) {
 
 // Function remove is overloaded
 // 1.Walker settles at the node prior to the target(remove) node
-// 2.Pt walker->next to remove's next, now the remove node is isolated
-// 3.Delete remove
+// 2.Pt walker->next to node_remove->next, now the remove node is isolated
+// 3.Delete node_remove
 // if (head = nullptr): nothing in the list thus just return
 // if (head = tail): only 1 element, make head/tail = nullptr, delete walker
 // if (remove = tail): make tail = walker, tail->next = nullptr, delete remove
 // if (remove = head), head = head->next, delete remove 
-void LinkedList::remove(Node *node_remove) {
-  // walker generally "stays" at the node prior to the target(remove) node
-  Node *node_prior = previousNode(node_remove);
-  if (node_remove == nullptr) {
-    /* If the target is a nullptr? */
-    return;   // Can't look for a 'nothing', return
+void LinkedList::remove(Node *node_target) {
+  // Check if the node_target is nullptr
+  if (node_target == nullptr) {
+    return;
+  } else {
+    // Check if list is empty
+    if (_head == nullptr) {
+      return;
+    } 
+    // Check if list only has 1 member
+    else if (_head == _tail) {
+      _head = _tail = nullptr;
+      // delete node_target;
+    }
+    // Check if node_target is the head
+    else if (node_target == _head) {
+      _head = _head->next;
+      delete node_target;
+    }
+    // Check if node_target is the tail
+    else if (node_target == _tail) {
+      _tail = previousNode(node_target);
+      _tail->next = nullptr;
+      delete node_target;
+    }
+    // If node_tarfet is in the middle
+    else {
+      Node *prevNode = previousNode(node_target);
+      prevNode->next = node_target->next;
+      delete node_target;
+    }
   }
-  if (_head == nullptr) {
-    /* If list empty? Head = NULL means nothing in the list */
-    return;   // Nothing in the list, return
-  } else if (_head == _tail) {  /* Only 1 element? head = tail mean they both
-    pt to the same address which indicate the list has 1 element only */
-    _head = nullptr;  // Set head pts to NULL
-    _tail = nullptr;  // Set tail pts to NULL
-    delete node_prior;    // delete walker since no use
-  } else if (node_remove == _tail) {  /* Remove the last node(tail)? */
-    _tail = node_prior;     // Let tail pt to the second to last node(new tail)
-    delete node_remove;     // Delete the target node (the original last node)
-    _tail->next = nullptr;  // Let the new last node's ptr var pt to nullptr
-  } else if (node_remove == _head) {  /* Remove the first node(head)? */
-    _head = _head->next;  // Let head pt to the second node(new head)
-    delete node_remove;   // Delete the target node(the original first node)
-  } else {  /* Remove node in the middle? */
-    node_prior->next = node_remove->next; /* Let the ptr var of the node prior to
-    the target node pts to the address which's pointed by the ptr var of target
-    node, the target node now is isolated */
-    delete node_remove;   // Delete the target node
+}
+
+LinkedList::LinkedList() : _head(nullptr), _tail(nullptr) {
+  std::cout << "Constructor starts" << std::endl;
+  std::cout << "Constructor ends" << std::endl;
+};
+// The destructor automatically gets called by the compiler when the life of the 
+// var is over, not just when teh program ends
+LinkedList::~LinkedList() {
+  std::cout << "Destructor starts" << std::endl;
+  while (_head != nullptr) {
+    std::cout << *this << std::endl;
+    remove(_head);
   }
+  std::cout << "~LinkedList() ends" << std::endl;
+}
+LinkedList::LinkedList(const LinkedList &list) {
+  /* Call the assignment operator and perform its algorithm 
+  same with: (*this).operator = (list), calling the member func of the obj and
+  and passing list as a variable
+   */
+  std::cout << "Copy constructor starts" << std::endl;
+  // Here I tell the compiler: make me a new obj by copying from list
+  *this = list;   // (*this).operator=(list);
+  std::cout << "Copy cconstructor ends" << std::endl;
+}
+LinkedList& LinkedList::operator=(const LinkedList &list) {
+  std::cout << "Assignment operator starts" << std::endl;;
+  /* Check if the list and this are the same place in the memory, if so, return
+  this. If they are the same thing and then if we call the destructor(line 182),
+  we would delete the list on the RHS and we wouldn't go further 
+   */
+  if (this == &list) {
+    return *this;
+  }
+  /* If the list already has sth in it, I need to delete(deallocate that memory)
+  be4 adding the stuff. Or, two things can happen depends on how we implement:
+  1. have a linked list that's a union of the two linked lists
+  2. have a memory leak
+  So we have to get rid of what's on the LHS of the assignment operator be4 we
+  assign the RHS
+   */
+  this->~LinkedList();
+  Node *walker = list._head;
+  while (walker != nullptr) {
+    insertTail(walker->data);
+    walker = walker->next;
+  }
+  std::cout << "Assignment operator ends" << std::endl;
+  return *this;
 }
 
 void LinkedList::insertHead(int item) {
@@ -193,28 +253,3 @@ std::ostream &operator<<(std::ostream &out, const LinkedList &list) {
   }
   return out;
 }
-
-// int main() {
-  // LinkedList l;
-  // LinkedList l2;
-  // for (int i = 0; i < 10; i++) {
-    // l.insertTail(i);
-  // }
-  // std::cout << "l insert head: ";
-  // std::cout << l << std::endl;
-  // 
-  // for (int i = 0; i < 10; i++) {
-    // l2.insertHead(i);
-  // }
-  // std::cout << "l2 insert tail: ";
-  // std::cout << l2 << std::endl;
-// 
-  // l2.remove(0);
-  // std::cout << "remove l2 - 0: " << l2 << std::endl;
-  // l2.remove(5);
-  // std::cout << "remove l2 - 5: " << l2 << std::endl;
-  // l2.remove(9);
-  // std::cout << "remove l2 - 9: " << l2 << std::endl;
-// 
-  // return 0;
-// }
