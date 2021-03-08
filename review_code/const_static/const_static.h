@@ -11,10 +11,12 @@
    straight through the class
  */
 
+
+
 class Inventory {
  private:
   static int count;
- 
+
  public:
   Inventory();
   static int getCount();

@@ -152,31 +152,34 @@ void LinkedList::remove(Node *node_target) {
 }
 
 LinkedList::LinkedList() : _head(nullptr), _tail(nullptr) {
-  std::cout << "Constructor starts" << std::endl;
-  std::cout << "Constructor ends" << std::endl;
-};
+  // std::cout << "Constructor starts" << std::endl;
+  // std::cout << "Constructor ends" << std::endl;
+}
+
 // The destructor automatically gets called by the compiler when the life of the 
 // var is over, not just when teh program ends
 LinkedList::~LinkedList() {
-  std::cout << "Destructor starts" << std::endl;
+  // std::cout << "Destructor starts" << std::endl;
   while (_head != nullptr) {
-    std::cout << *this << std::endl;
+    // std::cout << *this << std::endl;
     remove(_head);
   }
-  std::cout << "~LinkedList() ends" << std::endl;
+  // std::cout << "~LinkedList() ends" << std::endl;
 }
+
 LinkedList::LinkedList(const LinkedList &list) : LinkedList() {
   /* Call the assignment operator and perform its algorithm 
   same with: (*this).operator = (list), calling the member func of the obj and
   and passing list as a variable
    */
-  std::cout << "Copy constructor starts" << std::endl;
+  // std::cout << "Copy constructor starts" << std::endl;
   // Here I tell the compiler: make me a new obj by copying from list
   *this = list;   // (*this).operator=(list);
-  std::cout << "Copy constructor ends" << std::endl;
+  // std::cout << "Copy constructor ends" << std::endl;
 }
+
 LinkedList& LinkedList::operator=(const LinkedList &list) {
-  std::cout << "Assignment operator starts" << std::endl;;
+  // std::cout << "Assignment operator starts" << std::endl;;
   /* Check if the list and this are the same place in the memory, if so, return
   this. If they are the same thing and then if we call the destructor(line 182),
   we would delete the list on the RHS and we wouldn't go further 
@@ -197,7 +200,7 @@ LinkedList& LinkedList::operator=(const LinkedList &list) {
     insertTail(walker->data);
     walker = walker->next;
   }
-  std::cout << "Assignment operator ends" << std::endl;
+  // std::cout << "Assignment operator ends" << std::endl;
   return *this;
 }
 
