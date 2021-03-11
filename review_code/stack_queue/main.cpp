@@ -6,7 +6,7 @@
 bool isPalindrome(std::string word);
 
 int main() {
-  std::string words[] = {"radar", "tacocat", "drums"};
+  std::string words[] = {"Radar", "ta,cOCat", "dr ums", "A man, a PLAN, a canal, panama"};
   for (auto word : words) {
     if (isPalindrome(word)) {
       std::cout << word << " is a palindrome";
@@ -23,8 +23,10 @@ bool isPalindrome(std::string word) {
   Queue q;
   Stack s;
   for (auto character : word) {
-    q.push(character);
-    s.push(character);
+    if (isalpha(character)) {
+      q.push(tolower(character));
+      s.push(tolower(character));
+    }
   }
   while (!q.empty() && !s.empty()) {
     if (q.front() != s.top()) {

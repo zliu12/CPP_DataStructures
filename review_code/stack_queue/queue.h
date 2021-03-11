@@ -4,6 +4,7 @@
  * Copyright (c) [2021], Zhao Liu.
  */
 
+// #include "../linked_list/linked_list.h"
 #include "../linked_list/linked_list.h"
 
 class Queue {

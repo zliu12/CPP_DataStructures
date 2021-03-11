@@ -13,4 +13,3 @@ Inventory::Inventory() {
 int Inventory::getCount() {
   return count;
 }
-

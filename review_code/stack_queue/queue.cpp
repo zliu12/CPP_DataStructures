@@ -5,8 +5,6 @@
  */
 
 #include "Queue.h"
-#include <string>
-#include <iostream>
 
 void Queue::push(int item) {
   // Bcuz insert to the tail, we'll push from the head
