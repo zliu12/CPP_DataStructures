@@ -13,8 +13,8 @@ template <class T>
 class Node {
 public:
   T info;
-  Node *linkNext = nullptr;
-  Node *linkPrev = nullptr;
+  Node<T> *linkNext = nullptr;
+  Node<T> *linkPrev = nullptr;
 };
 
 template <class T>
