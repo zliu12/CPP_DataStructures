@@ -3,16 +3,16 @@
  *
  * Copyright (c) [2021], Zhao Liu.
  */
-
 #ifndef NODE_H_
 #define NODE_H_
 
 template <class T>
 class Node {
- public:
-  T data;
-  Node<T>* next = nullptr;
+public:
+  T info;
+  Node<T>* linkNext = nullptr;
+  Node<T>* linkPrev = nullptr;
 };
 
-#include "node.cpp"
-#endif    // NODE_H_
+#include "Node.cpp"
+#endif  // NODE_H_

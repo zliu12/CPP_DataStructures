@@ -6,7 +6,8 @@
 
 #ifndef NODE_ITERATOR_H_
 #define NODE_ITERATOR_H_
-#include "node.h"
+#include "Node.h"
+#include <iterator>
 
 template <class T>
 class Node_Iterator {

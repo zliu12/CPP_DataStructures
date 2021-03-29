@@ -1,30 +1,34 @@
-#include "linked_list.h"
-#include "Node_Iterator.h"
+/**
+ * Template Doubly Linked List - Main
+ *
+ * Copyright (c) [2021], Zhao Liu.
+ */
+
+#include "Tml_Dbl_LinkedList.h"
 #include <iostream>
 
 int main() {
-  // Declare the list
-  LinkedList<int> list;
+	// Declare a linked list
+	DlinkedList<int> list;
 
-  // Add to the list
-  for (int i = 0; i < 10; ++i) {
-    list.insertTail(i);
-  }
+	// Insert to the linked list
+	for (int i = 0; i < 10; ++i) {
+		list.insertAtEnd(i);
+	}
 
-  // Declare the Node Iterator
-  Node_Iterator<int> iter1 = list.begin();
-  Node_Iterator<int> iter2 = list.end();
+	// Declare a Node_Iterator
+	Node_Iterator<int> iter1 = list.begin();
+	while (iter1 != list.end()) {
+		std::cout << *iter1 << " ";
+		++iter1;
+	}
+	std::cout << std::endl;
+	
+	// Declare a Node_Iterator
+	Node_Iterator<int> iter2 = list.end();
+	while (iter2 != list.begin()) {
+		std::cout << *iter2 << " ";
+	}
 
-  while (iter1 != list.end()) {
-    std::cout << *iter1 << " ";
-    ++iter1;
-  }
-  std::cout << std::endl;
-  while (iter2 != list.begin()) {
-    std::cout << *iter2 << " ";
-    --iter2;
-  }
-
-
-  return 0;
+	return 0;
 }

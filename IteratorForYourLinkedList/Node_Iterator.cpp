@@ -7,7 +7,6 @@
 #ifndef NODE_ITERATOR_CPP_
 #define NODE_ITERATOR_CPP_
 #include "Node_Iterator.h"
-#include "linked_list.h"
 #include <iostream>
 
 template <class T>
@@ -22,7 +21,7 @@ Node_Iterator<T>::Node_Iterator(Node<T>* nodeAssignToCurrent) {
 
 template <class T>
 Node_Iterator<T>& Node_Iterator<T>::operator++() {
-  current = current->next;
+  current = current->linkNext;
   return *this;
 }
 
@@ -36,35 +35,21 @@ Node_Iterator<T> Node_Iterator<T>::operator++(int) {
 
 template <class T>
 Node_Iterator<T>& Node_Iterator<T>::operator--() {
-  // If nothing is in the front (current is head)
-  Node<T>* nPrev = previousNode(current);
-  if (nPrev == nullptr) {
-    std::cout << "Nothing in the front." << std::endl;
-  }
-  else {
-    // Current points to the Node in front of it
-    current = previousNode(current);
-  }
+  current = current->linkPrev;
   return *this;
 }
 
 template <class T>
 Node_Iterator<T> Node_Iterator<T>::operator--(int) {
+  // Create a temporary
   Node_Iterator<T>* temporary = *this;
-  // If nothing is in the front (current is head)
-  if (previousNode(current) == nullptr) {
-    std::cout << "Nothing in the front." << std::endl;
-  }
-  else {
-    // Current points to the Node in front of it
-    current = previousNode(current);
-  }
+  current = current->linkPrev;
   return current;
 }
 
 template <class T>
 T& Node_Iterator<T>::operator*() const {
-  return current->data;
+  return current->info;
 }
 
 template <class S>
