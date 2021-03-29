@@ -11,8 +11,6 @@
 #include <cstdlib>
 #include <iostream>
 
-
-
 template <class T>
 class DlinkedList {
 private:
@@ -27,6 +25,7 @@ private:
   void removeNode(Node<T> *targetNode);         // Remove a particular node
 
 public:
+  typedef Node_Iterator<T> iterator;
   DlinkedList();                                // Default constructor
   ~DlinkedList();                               // Big3: destructor
   DlinkedList &operator=(const DlinkedList &l); // Big3: assignment operator

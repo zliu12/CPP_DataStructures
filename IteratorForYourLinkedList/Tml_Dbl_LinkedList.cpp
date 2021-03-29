@@ -353,12 +353,15 @@ std::ostream &operator<<(std::ostream &out, const DlinkedList<P> &l) {
 
 template <class T>
 Node_Iterator<T> DlinkedList<T>::begin() {
+  std::cout << "begin() ends" << std::endl;
   return Node_Iterator<T>(head);
 }
 
 template <class T>
 Node_Iterator<T> DlinkedList<T>::end() {
+  std::cout << "end() ends" << std::endl;
   return Node_Iterator<T>(nullptr);
+
 }
 
 #endif // TML_DBL_LINKEDLIST_CPP_

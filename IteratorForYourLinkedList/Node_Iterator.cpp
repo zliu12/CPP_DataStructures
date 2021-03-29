@@ -35,7 +35,9 @@ Node_Iterator<T> Node_Iterator<T>::operator++(int) {
 
 template <class T>
 Node_Iterator<T>& Node_Iterator<T>::operator--() {
+  std::cout << "pre-- starts" << std::endl;
   current = current->linkPrev;
+  std::cout << "pre-- ends" << std::endl;
   return *this;
 }
 
