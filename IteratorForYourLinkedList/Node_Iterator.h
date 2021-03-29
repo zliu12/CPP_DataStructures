@@ -13,6 +13,7 @@ template <class T>
 class Node_Iterator : public std::iterator<std::bidirectional_iterator_tag, T> {
  private:
   Node<T>* current;
+  
  
  public:
   // Default constructor

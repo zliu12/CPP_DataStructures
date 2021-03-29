@@ -17,21 +17,18 @@ int main() {
 	}
 
 	// Declare a Node_Iterator
-	// DlinkedList<int>::iterator iter1 = list.begin();
-	// while (iter1 != list.end()) {
-	// 	std::cout << *iter1 << " ";
-	// 	++iter1;
-	// }
-	// std::cout << std::endl;
+	DlinkedList<int>::iterator iter1 = list.begin();
+	while (iter1 != list.end()) {
+		std::cout << *iter1 << " ";
+		++iter1;
+	}
 
 	// Declare a Node_Iterator
-	DlinkedList<int>::iterator iter2 = list.end();
-	std::cout << "right here" << std::endl;
-	--iter2;
+	DlinkedList<int>::iterator iter2 = list.getTail();
 	while (iter2 != list.begin()) {
 		std::cout << *iter2 << " ";
 		--iter2;
-	}
+	} 
 
 	return 0;
 }

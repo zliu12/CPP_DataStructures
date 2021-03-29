@@ -51,6 +51,8 @@ public:
   Node_Iterator<T> begin();
   // This is for the Node_Iterator
   Node_Iterator<T> end();
+  // Get the list tail
+  Node_Iterator<T> getTail();
 };
 
 #include "Tml_Dbl_LinkedList.cpp"
