@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.java": "java",
+    "__config": "cpp",
+    "__cxx_version": "cpp",
+    "__hash_table": "cpp",
+    "__locale": "cpp",
+    "tuple": "cpp",
+    "ostream": "cpp"
+  }
+}
