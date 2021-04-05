@@ -55,6 +55,7 @@ int main() {
             << "s1 current size: " << s1.size() << ", "             // 5
             << "s1.top() is: " << s1.top() << std::endl;            // 14
 
+  // s1 seek
   std::cout << "s1.seek(4): " << s1.seek(4) << std::endl;           // 10
   std::cout << "s1.seek(3): " << s1.seek(3) << std::endl;           // 11
   std::cout << "s1.seek(2): " << s1.seek(2) << std::endl;           // 12
@@ -66,11 +67,12 @@ int main() {
   std::cout << "s2.top(): " << s2.top() << std::endl;
   std::cout << "s2 = s1, s2 current size: " << s2.size() << std::endl;
 
-  std::cout << "s2.seek(4): " << s2.seek(4) << std::endl;           //
-  std::cout << "s2.seek(3): " << s2.seek(3) << std::endl;           //
-  std::cout << "s2.seek(2): " << s2.seek(2) << std::endl;           //
-  std::cout << "s2.seek(1): " << s2.seek(1) << std::endl;           //
-  std::cout << "s2.seek(0): " << s2.seek(0) << std::endl;           //
+  // s2 seek
+  std::cout << "s2.seek(4): " << s2.seek(4) << std::endl;           // 10
+  std::cout << "s2.seek(3): " << s2.seek(3) << std::endl;           // 11
+  std::cout << "s2.seek(2): " << s2.seek(2) << std::endl;           // 12
+  std::cout << "s2.seek(1): " << s2.seek(1) << std::endl;           // 13
+  std::cout << "s2.seek(0): " << s2.seek(0) << std::endl;           // 14
 
   return 0;
 }
