@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/main.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/main.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/main.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/Cursor.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/Cursor.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/Cursor.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/History.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/History.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/History.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/KeyShortcuts.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/KeyShortcuts.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/KeyShortcuts.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/MouseEvents.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/MouseEvents.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/MouseEvents.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/Snapshot.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/Snapshot.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/Snapshot.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/States.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/States.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/States.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/TextField.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/TextField.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/TextField.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/TextInput.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/TextInput.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/TextInput.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/TextInputBox.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/TextInputBox.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/TextInputBox.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/Typing.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/Typing.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/Typing.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/Word.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/Word.cpp",
+  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/Word.cpp"
+}
+]
