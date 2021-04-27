@@ -1,0 +1,87 @@
+[
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/main.cpp.o -c /Users/qcl/Desktop/projectOne/main.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/main.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/Box.cpp.o -c /Users/qcl/Desktop/projectOne/Box.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/Box.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/Label.cpp.o -c /Users/qcl/Desktop/projectOne/Label.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/Label.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/TextInput.cpp.o -c /Users/qcl/Desktop/projectOne/TextInput.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/TextInput.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/State.cpp.o -c /Users/qcl/Desktop/projectOne/State.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/State.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/States.cpp.o -c /Users/qcl/Desktop/projectOne/States.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/States.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/Typer.cpp.o -c /Users/qcl/Desktop/projectOne/Typer.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/Typer.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/Cursor.cpp.o -c /Users/qcl/Desktop/projectOne/Cursor.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/Cursor.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/GUIComponents.cpp.o -c /Users/qcl/Desktop/projectOne/GUIComponents.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/GUIComponents.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/KeyBoardShortCut.cpp.o -c /Users/qcl/Desktop/projectOne/KeyBoardShortCut.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/KeyBoardShortCut.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/EventHandler.cpp.o -c /Users/qcl/Desktop/projectOne/EventHandler.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/EventHandler.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/SnapshotInterface.cpp.o -c /Users/qcl/Desktop/projectOne/SnapshotInterface.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/SnapshotInterface.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/Snapshot.cpp.o -c /Users/qcl/Desktop/projectOne/Snapshot.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/Snapshot.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/History.cpp.o -c /Users/qcl/Desktop/projectOne/History.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/History.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/KeyBoardEvent.cpp.o -c /Users/qcl/Desktop/projectOne/KeyBoardEvent.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/KeyBoardEvent.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/LinkedList.cpp.o -c /Users/qcl/Desktop/projectOne/LinkedList.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/LinkedList.cpp"
+},
+{
+  "directory": "/Users/qcl/Desktop/projectOne/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/ProjectOneTextBox.dir/MouseEvents.cpp.o -c /Users/qcl/Desktop/projectOne/MouseEvents.cpp",
+  "file": "/Users/qcl/Desktop/projectOne/MouseEvents.cpp"
+}
+]

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ProjectOneTextBox"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProjectOneTextBox">
+				<Option output="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/ProjectOneTextBox" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProjectOneTextBox"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProjectOneTextBox/fast">
+				<Option output="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/ProjectOneTextBox" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProjectOneTextBox/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Box.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Box.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Cursor.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Cursor.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/EventHandler.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/EventHandler.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/GUIComponents.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/GUIComponents.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/History.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/History.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/KeyBoardEvent.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/KeyBoardEvent.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/KeyBoardShortCut.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/KeyBoardShortCut.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Label.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Label.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/LinkedList.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/LinkedList.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/MouseEvents.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/MouseEvents.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Node.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Snapshot.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Snapshot.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/SnapshotInterface.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/SnapshotInterface.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/State.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/State.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/States.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/States.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/TextInput.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/TextInput.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Typer.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/Typer.h">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/main.cpp">
+			<Option target="ProjectOneTextBox"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/../../../../../../../usr/local/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/../../../../../../../usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/../../../../../../../usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/../../../../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/mengxiang/Desktop/CSclasses/CS08/Project/ProjectOneTextBox/../../../../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
