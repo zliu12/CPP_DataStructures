@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/qcl/Desktop/peer_review/Aaron_Lin
+CMAKE_SOURCE_DIR = /Users/qcl/pcc/spring2021/cpp008/Sample/11
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/qcl/Desktop/peer_review/Aaron_Lin/build
+CMAKE_BINARY_DIR = /Users/qcl/pcc/spring2021/cpp008/Sample/11/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/Applications/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/qcl/Desktop/peer_review/Aaron_Lin/build/CPackSourceConfig.cmake
+	/Applications/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/qcl/pcc/spring2021/cpp008/Sample/11/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,9 +117,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/qcl/Desktop/peer_review/Aaron_Lin/build/CMakeFiles /Users/qcl/Desktop/peer_review/Aaron_Lin/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/qcl/pcc/spring2021/cpp008/Sample/11/build/CMakeFiles /Users/qcl/pcc/spring2021/cpp008/Sample/11/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/qcl/Desktop/peer_review/Aaron_Lin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/qcl/pcc/spring2021/cpp008/Sample/11/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -145,6 +145,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named sample1
+
+# Build rule for target.
+sample1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sample1
+.PHONY : sample1
+
+# fast build rule for target.
+sample1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/build
+.PHONY : sample1/fast
 
 #=============================================================================
 # Target rules for targets named ContinuousCoverage
@@ -301,19 +314,6 @@ ExperimentalTest: cmake_check_build_system
 ExperimentalTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
 .PHONY : ExperimentalTest/fast
-
-#=============================================================================
-# Target rules for targets named Aaron_Lin
-
-# Build rule for target.
-Aaron_Lin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Aaron_Lin
-.PHONY : Aaron_Lin
-
-# fast build rule for target.
-Aaron_Lin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/build
-.PHONY : Aaron_Lin/fast
 
 #=============================================================================
 # Target rules for targets named NightlySubmit
@@ -528,7 +528,7 @@ Cursor.o: Cursor.cpp.o
 
 # target to build an object file
 Cursor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Cursor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Cursor.cpp.o
 .PHONY : Cursor.cpp.o
 
 Cursor.i: Cursor.cpp.i
@@ -536,7 +536,7 @@ Cursor.i: Cursor.cpp.i
 
 # target to preprocess a source file
 Cursor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Cursor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Cursor.cpp.i
 .PHONY : Cursor.cpp.i
 
 Cursor.s: Cursor.cpp.s
@@ -544,7 +544,7 @@ Cursor.s: Cursor.cpp.s
 
 # target to generate assembly for a file
 Cursor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Cursor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Cursor.cpp.s
 .PHONY : Cursor.cpp.s
 
 History.o: History.cpp.o
@@ -552,7 +552,7 @@ History.o: History.cpp.o
 
 # target to build an object file
 History.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/History.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/History.cpp.o
 .PHONY : History.cpp.o
 
 History.i: History.cpp.i
@@ -560,7 +560,7 @@ History.i: History.cpp.i
 
 # target to preprocess a source file
 History.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/History.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/History.cpp.i
 .PHONY : History.cpp.i
 
 History.s: History.cpp.s
@@ -568,7 +568,7 @@ History.s: History.cpp.s
 
 # target to generate assembly for a file
 History.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/History.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/History.cpp.s
 .PHONY : History.cpp.s
 
 KeyShortcuts.o: KeyShortcuts.cpp.o
@@ -576,7 +576,7 @@ KeyShortcuts.o: KeyShortcuts.cpp.o
 
 # target to build an object file
 KeyShortcuts.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/KeyShortcuts.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/KeyShortcuts.cpp.o
 .PHONY : KeyShortcuts.cpp.o
 
 KeyShortcuts.i: KeyShortcuts.cpp.i
@@ -584,7 +584,7 @@ KeyShortcuts.i: KeyShortcuts.cpp.i
 
 # target to preprocess a source file
 KeyShortcuts.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/KeyShortcuts.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/KeyShortcuts.cpp.i
 .PHONY : KeyShortcuts.cpp.i
 
 KeyShortcuts.s: KeyShortcuts.cpp.s
@@ -592,7 +592,7 @@ KeyShortcuts.s: KeyShortcuts.cpp.s
 
 # target to generate assembly for a file
 KeyShortcuts.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/KeyShortcuts.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/KeyShortcuts.cpp.s
 .PHONY : KeyShortcuts.cpp.s
 
 MouseEvents.o: MouseEvents.cpp.o
@@ -600,7 +600,7 @@ MouseEvents.o: MouseEvents.cpp.o
 
 # target to build an object file
 MouseEvents.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/MouseEvents.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/MouseEvents.cpp.o
 .PHONY : MouseEvents.cpp.o
 
 MouseEvents.i: MouseEvents.cpp.i
@@ -608,7 +608,7 @@ MouseEvents.i: MouseEvents.cpp.i
 
 # target to preprocess a source file
 MouseEvents.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/MouseEvents.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/MouseEvents.cpp.i
 .PHONY : MouseEvents.cpp.i
 
 MouseEvents.s: MouseEvents.cpp.s
@@ -616,7 +616,7 @@ MouseEvents.s: MouseEvents.cpp.s
 
 # target to generate assembly for a file
 MouseEvents.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/MouseEvents.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/MouseEvents.cpp.s
 .PHONY : MouseEvents.cpp.s
 
 Snapshot.o: Snapshot.cpp.o
@@ -624,7 +624,7 @@ Snapshot.o: Snapshot.cpp.o
 
 # target to build an object file
 Snapshot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Snapshot.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Snapshot.cpp.o
 .PHONY : Snapshot.cpp.o
 
 Snapshot.i: Snapshot.cpp.i
@@ -632,7 +632,7 @@ Snapshot.i: Snapshot.cpp.i
 
 # target to preprocess a source file
 Snapshot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Snapshot.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Snapshot.cpp.i
 .PHONY : Snapshot.cpp.i
 
 Snapshot.s: Snapshot.cpp.s
@@ -640,7 +640,7 @@ Snapshot.s: Snapshot.cpp.s
 
 # target to generate assembly for a file
 Snapshot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Snapshot.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Snapshot.cpp.s
 .PHONY : Snapshot.cpp.s
 
 States.o: States.cpp.o
@@ -648,7 +648,7 @@ States.o: States.cpp.o
 
 # target to build an object file
 States.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/States.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/States.cpp.o
 .PHONY : States.cpp.o
 
 States.i: States.cpp.i
@@ -656,7 +656,7 @@ States.i: States.cpp.i
 
 # target to preprocess a source file
 States.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/States.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/States.cpp.i
 .PHONY : States.cpp.i
 
 States.s: States.cpp.s
@@ -664,7 +664,7 @@ States.s: States.cpp.s
 
 # target to generate assembly for a file
 States.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/States.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/States.cpp.s
 .PHONY : States.cpp.s
 
 TextField.o: TextField.cpp.o
@@ -672,7 +672,7 @@ TextField.o: TextField.cpp.o
 
 # target to build an object file
 TextField.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/TextField.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/TextField.cpp.o
 .PHONY : TextField.cpp.o
 
 TextField.i: TextField.cpp.i
@@ -680,7 +680,7 @@ TextField.i: TextField.cpp.i
 
 # target to preprocess a source file
 TextField.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/TextField.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/TextField.cpp.i
 .PHONY : TextField.cpp.i
 
 TextField.s: TextField.cpp.s
@@ -688,7 +688,7 @@ TextField.s: TextField.cpp.s
 
 # target to generate assembly for a file
 TextField.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/TextField.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/TextField.cpp.s
 .PHONY : TextField.cpp.s
 
 TextInput.o: TextInput.cpp.o
@@ -696,7 +696,7 @@ TextInput.o: TextInput.cpp.o
 
 # target to build an object file
 TextInput.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/TextInput.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/TextInput.cpp.o
 .PHONY : TextInput.cpp.o
 
 TextInput.i: TextInput.cpp.i
@@ -704,7 +704,7 @@ TextInput.i: TextInput.cpp.i
 
 # target to preprocess a source file
 TextInput.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/TextInput.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/TextInput.cpp.i
 .PHONY : TextInput.cpp.i
 
 TextInput.s: TextInput.cpp.s
@@ -712,7 +712,7 @@ TextInput.s: TextInput.cpp.s
 
 # target to generate assembly for a file
 TextInput.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/TextInput.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/TextInput.cpp.s
 .PHONY : TextInput.cpp.s
 
 TextInputBox.o: TextInputBox.cpp.o
@@ -720,7 +720,7 @@ TextInputBox.o: TextInputBox.cpp.o
 
 # target to build an object file
 TextInputBox.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/TextInputBox.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/TextInputBox.cpp.o
 .PHONY : TextInputBox.cpp.o
 
 TextInputBox.i: TextInputBox.cpp.i
@@ -728,7 +728,7 @@ TextInputBox.i: TextInputBox.cpp.i
 
 # target to preprocess a source file
 TextInputBox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/TextInputBox.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/TextInputBox.cpp.i
 .PHONY : TextInputBox.cpp.i
 
 TextInputBox.s: TextInputBox.cpp.s
@@ -736,7 +736,7 @@ TextInputBox.s: TextInputBox.cpp.s
 
 # target to generate assembly for a file
 TextInputBox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/TextInputBox.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/TextInputBox.cpp.s
 .PHONY : TextInputBox.cpp.s
 
 Typing.o: Typing.cpp.o
@@ -744,7 +744,7 @@ Typing.o: Typing.cpp.o
 
 # target to build an object file
 Typing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Typing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Typing.cpp.o
 .PHONY : Typing.cpp.o
 
 Typing.i: Typing.cpp.i
@@ -752,7 +752,7 @@ Typing.i: Typing.cpp.i
 
 # target to preprocess a source file
 Typing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Typing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Typing.cpp.i
 .PHONY : Typing.cpp.i
 
 Typing.s: Typing.cpp.s
@@ -760,7 +760,7 @@ Typing.s: Typing.cpp.s
 
 # target to generate assembly for a file
 Typing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Typing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Typing.cpp.s
 .PHONY : Typing.cpp.s
 
 Word.o: Word.cpp.o
@@ -768,7 +768,7 @@ Word.o: Word.cpp.o
 
 # target to build an object file
 Word.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Word.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Word.cpp.o
 .PHONY : Word.cpp.o
 
 Word.i: Word.cpp.i
@@ -776,7 +776,7 @@ Word.i: Word.cpp.i
 
 # target to preprocess a source file
 Word.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Word.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Word.cpp.i
 .PHONY : Word.cpp.i
 
 Word.s: Word.cpp.s
@@ -784,7 +784,7 @@ Word.s: Word.cpp.s
 
 # target to generate assembly for a file
 Word.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/Word.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/Word.cpp.s
 .PHONY : Word.cpp.s
 
 main.o: main.cpp.o
@@ -792,7 +792,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -800,7 +800,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -808,7 +808,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Aaron_Lin.dir/build.make CMakeFiles/Aaron_Lin.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample1.dir/build.make CMakeFiles/sample1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -850,7 +850,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... Aaron_Lin"
+	@echo "... sample1"
 	@echo "... Cursor.o"
 	@echo "... Cursor.i"
 	@echo "... Cursor.s"

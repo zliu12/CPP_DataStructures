@@ -1,11 +1,11 @@
 set(CMAKE_CXX_STANDARD 14)
 cmake_minimum_required(VERSION 3.0.0)
-project(Aaron_Lin VERSION 0.1.0)
+project(1 VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
 
-add_executable(Aaron_Lin main.cpp
+add_executable(1 main.cpp
                Cursor.cpp Cursor.hpp
                EventHandler.hpp
                GUIComponent.hpp
@@ -24,7 +24,7 @@ add_executable(Aaron_Lin main.cpp
                Typing.cpp Typing.hpp
                Word.cpp Word.hpp)
 
-target_link_libraries(Aaron_Lin sfml-graphics sfml-audio)
+target_link_libraries(sample1 sfml-graphics sfml-audio)
 
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 

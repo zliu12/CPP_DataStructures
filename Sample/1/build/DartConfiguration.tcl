@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/qcl/Desktop/peer_review/Aaron_Lin
-BuildDirectory: /Users/qcl/Desktop/peer_review/Aaron_Lin/build
+SourceDirectory: /Users/qcl/pcc/spring2021/cpp008/Sample/11
+BuildDirectory: /Users/qcl/pcc/spring2021/cpp008/Sample/11/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/Applications/CMake.app/Contents/bin/cmake" "/Users/qcl/Desktop/peer_review/Aaron_Lin"
+ConfigureCommand: "/Applications/CMake.app/Contents/bin/cmake" "/Users/qcl/pcc/spring2021/cpp008/Sample/11"
 MakeCommand: /Applications/CMake.app/Contents/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

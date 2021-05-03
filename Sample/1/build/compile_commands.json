@@ -1,62 +1,62 @@
 [
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/main.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/main.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/main.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/main.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/main.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/main.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/Cursor.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/Cursor.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/Cursor.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/Cursor.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/Cursor.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/Cursor.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/History.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/History.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/History.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/History.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/History.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/History.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/KeyShortcuts.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/KeyShortcuts.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/KeyShortcuts.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/KeyShortcuts.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/KeyShortcuts.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/KeyShortcuts.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/MouseEvents.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/MouseEvents.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/MouseEvents.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/MouseEvents.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/MouseEvents.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/MouseEvents.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/Snapshot.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/Snapshot.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/Snapshot.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/Snapshot.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/Snapshot.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/Snapshot.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/States.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/States.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/States.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/States.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/States.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/States.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/TextField.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/TextField.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/TextField.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/TextField.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/TextField.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/TextField.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/TextInput.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/TextInput.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/TextInput.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/TextInput.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/TextInput.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/TextInput.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/TextInputBox.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/TextInputBox.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/TextInputBox.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/TextInputBox.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/TextInputBox.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/TextInputBox.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/Typing.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/Typing.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/Typing.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/Typing.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/Typing.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/Typing.cpp"
 },
 {
-  "directory": "/Users/qcl/Desktop/peer_review/Aaron_Lin/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++14 -o CMakeFiles/Aaron_Lin.dir/Word.cpp.o -c /Users/qcl/Desktop/peer_review/Aaron_Lin/Word.cpp",
-  "file": "/Users/qcl/Desktop/peer_review/Aaron_Lin/Word.cpp"
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -std=gnu++14 -o CMakeFiles/sample1.dir/Word.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/11/Word.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/11/Word.cpp"
 }
 ]

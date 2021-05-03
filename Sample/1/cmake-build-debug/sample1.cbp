@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="sample1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\..\opt\homebrew\;CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\;CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\;CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\SFML\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sample1">
+				<Option output="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/sample1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 sample1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sample1/fast">
+				<Option output="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/sample1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 sample1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/qcl/pcc/spring2021/cpp008/Sample/11/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/Cursor.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/Cursor.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/EventHandler.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/GUIComponent.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/History.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/History.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/KeyShortcuts.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/KeyShortcuts.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/MouseEvents.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/MouseEvents.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/Snapshot.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/Snapshot.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/SnapshotInterface.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/States.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/States.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/TextField.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/TextField.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/TextInput.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/TextInput.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/TextInputBox.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/TextInputBox.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/Typing.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/Typing.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/Word.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/Word.hpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/linked_list.h">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/list.h">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/main.cpp">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/stack.h">
+			<Option target="sample1"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/../../../../../../../opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/../../../../../../../opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/../../../../../../../opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/../../../../../../../opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/qcl/pcc/spring2021/cpp008/Sample/11/../../../../../../../opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\SFML\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

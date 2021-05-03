@@ -1,0 +1,127 @@
+[
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/main.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/main.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/main.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Color.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Color.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Color.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Cursor.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Cursor.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Cursor.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Data.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Data.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Data.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/DropDown.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/DropDown.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/DropDown.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/EventHandler.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/EventHandler.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/EventHandler.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Fonts.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Fonts.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Fonts.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/GUIComponents.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/GUIComponents.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/GUIComponents.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/History.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/History.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/History.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Input.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Input.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Input.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/InputBox.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/InputBox.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/InputBox.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Item.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Item.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Item.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Itemlist.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Itemlist.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Itemlist.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Iterator.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Iterator.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Iterator.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/KeyBoard.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/KeyBoard.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/KeyBoard.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/LinkedList.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/LinkedList.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/LinkedList.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/MyClass.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/MyClass.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/MyClass.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Node.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Node.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Node.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/ObjectState.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/ObjectState.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/ObjectState.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/SnapShot.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/SnapShot.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/SnapShot.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Stacks.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Stacks.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Stacks.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/State.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/State.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/State.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Title.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Title.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Title.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Typing.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Typing.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Typing.cpp"
+},
+{
+  "directory": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/4.dir/Word.cpp.o -c /Users/qcl/pcc/spring2021/cpp008/Sample/4/Word.cpp",
+  "file": "/Users/qcl/pcc/spring2021/cpp008/Sample/4/Word.cpp"
+}
+]
