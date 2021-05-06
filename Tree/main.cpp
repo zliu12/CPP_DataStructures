@@ -14,20 +14,22 @@ int main() {
   srand(time(NULL));
   BinaryTree<int> t;
 
-  std::cout << "This is the data: ";
+  std::cout << "Numbers: " << std::endl;
   for(int i = 0; i < 10; ++i) {
-    int x = rand() % 100;
-    std::cout << x << " ";
-    t.push(x);
+    int x = rand() % 50;
+    std::cout << x << "\t";
+    // t.push(x);
+    t += x;
   }
   std::cout << std::endl;
 
-  std::cout << "inOrder tree: ";
+  std::cout << "inOrder: " << std::endl;
   t.inOrder();
   std::cout << std::endl;
 
-  std::cout << "Double tree: ";
+  std::cout << "inOrder*2: " << std::endl;
   t.inOrder(doubleTree);
+  t.inOrder();
   return 0;
 }
 

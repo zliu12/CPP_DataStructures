@@ -14,9 +14,9 @@ void BinaryTree<T>::inOrder(Node<T>* root, void f(T&)) {
   if(root == nullptr) {
     return;
   }
-  inOrder(root->left);
+  inOrder(root->left, f);
   f(root->data);
-  inOrder(root->right);
+  inOrder(root->right, f);
 }
 
 template <class T>
@@ -25,8 +25,8 @@ void BinaryTree<T>::postOrder(Node<T>* root, void f(T&)) {
   if(root == nullptr) {
     return;
   }
-  postOrder(root->left);
-  postOrder(root->right);
+  postOrder(root->left, f);
+  postOrder(root->right, f);
   f(root->data);
 }
 
@@ -37,8 +37,8 @@ void BinaryTree<T>::preOrder(Node<T>* root, void f(T&)) {
     return;
   }
   f(root->data);
-  preOrder(root->left);
-  preOrder(root->right);
+  preOrder(root->left, f);
+  preOrder(root->right, f);
 }
 
 template <class T>
@@ -65,9 +65,10 @@ void BinaryTree<T>::push(T data) {
 }
 
 template <class T>
-void BinaryTree<T>::pop() {
-
+void BinaryTree<T>::operator+=(T data) {
+  push(data, root);
 }
+
 
 template <class T>
 void BinaryTree<T>::inOrder(void f(T&)) {

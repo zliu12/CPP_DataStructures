@@ -12,7 +12,7 @@
 namespace {
   template <class T>
   void output(T& data) {
-    std::cout << data << " ";
+    std::cout << data << "\t";
   }
 }
 
@@ -29,8 +29,7 @@ class BinaryTree {
 
  public:
   void push(T data);
-  // Pop the bottom right
-  void pop();
+  void operator+=(T data);
   void inOrder(void f(T&) = output);
   void postOrder(void f(T&) = output);
   void preOrder(void f(T&) = output);
