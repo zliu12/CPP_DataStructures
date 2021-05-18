@@ -5,9 +5,9 @@ Item::Item(/* args */){
     // font.loadFromFile("OpenSans-Bold.ttf");
     size = sf::Vector2f(400,100);
     box.setSize(size);
-    box.setFillColor(sf::Color::Transparent);
+    box.setFillColor(sf::Color::White);
 
-    text.setFillColor(sf::Color::White);
+    text.setFillColor(sf::Color::Blue);
     text.setStyle(sf::Text::Bold);
     text.setFont(Fonts::getFont());
     text.setCharacterSize(50);

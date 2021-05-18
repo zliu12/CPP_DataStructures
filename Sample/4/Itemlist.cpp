@@ -40,8 +40,8 @@ void Itemlist::addEventHandler(sf::RenderWindow& window, sf::Event event){
             State::setStateEnable(State::APPEAR, false);
             State::setStateEnable(State::CLICKED, true);
             chose = iter.current->data.getString();
-            cout << chose << endl;
         }
+            cout << chose << endl;
     }
 }
 

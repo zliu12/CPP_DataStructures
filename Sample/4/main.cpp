@@ -68,7 +68,7 @@ int main()
     vector<string> vector {"abcdef", "Apples", "Bananas", "Hello", "Hello Nurse!"};
     DropDown down(vector);
     down.setPosition(0, 0);
-    // Itemlist list(vector);
+    Itemlist list(vector);
     // InputBox box;
     // Item i;
     
@@ -96,9 +96,9 @@ int main()
         // window.draw(data);
         //window.draw(ball);
         //window.draw(shadow);
-        // window.draw(list);
+        window.draw(list);
         // window.draw(box);
-        window.draw(down);
+        // window.draw(down);
         // cout << "Draw" << endl;
         window.display();
     }
